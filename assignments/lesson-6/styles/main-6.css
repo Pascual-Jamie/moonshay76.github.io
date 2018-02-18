@@ -12,7 +12,7 @@ body {
 header, nav, main, footer { 
     margin: 1.25rem auto;
     padding: .5rem;
-    max-width: 800px;
+    max-width: 90%;
     text-align: center;
 }
 
@@ -78,7 +78,7 @@ nav ul.hide {
 
 main {
     padding: 0;
-    max-width: 800px;
+    max-width: 90%;
 }
 
  h2 {
@@ -93,8 +93,11 @@ main section div {}
 
 main section picture img {
     display: block;
+    width: 55%;
+    height: auto;
     float: left;
-    margin-right: 18%; 
+    margin-right: 18%;
+    margin-left: 10%;
 }
 
 main figure { 
@@ -131,7 +134,8 @@ section.forecast table th, td {
 
 article p.town-article img { 
     display: block;
-    max-height: 100%; 
+    width: 50%;
+    max-height: 50%; 
     margin-right: auto;
     margin-left: auto;
     padding: 1px 1px 12px 1px;
