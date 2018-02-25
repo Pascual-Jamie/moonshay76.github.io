@@ -1,0 +1,17 @@
+@media only screen and (min-width: 64em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    .townphotos:hover {
+       box-shadow: 5px 5px 10px grey;
+        
+    }
+    
+    .weatherpho {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem;
+        margin: auto;
+        max-width: 80%;
+        align-content: space-between;
+        
+    }
+}
+    
