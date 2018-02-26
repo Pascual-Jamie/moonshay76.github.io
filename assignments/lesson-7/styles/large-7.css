@@ -7,8 +7,6 @@
     
     .weatherpho {
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 2rem;
-        margin: auto;
         max-width: 80%;
         align-content: space-between;
         
