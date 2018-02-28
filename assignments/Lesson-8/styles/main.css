@@ -21,6 +21,7 @@ main {
 table#t01 thead th:nth-child(1) {
     background-color: #7fb9c2;
     color: black;
+    font-size: 30px;
 }
 
 table#t01 tr:nth-child(even) {
@@ -34,11 +35,13 @@ table#t01 tr:nth-child(odd) {
 table#t01 tfoot tr:first-child {
     background-color: #7fb9c2;
     color: black;
+    font-size: 14px;
 }
 
 table#t01 th {
     background-color: #628ca6;
     color: white;
+    font-size: 20px;
 }
 
 table#t01 tbody tr:nth-child(6) td:first-child {
