@@ -1,0 +1,59 @@
+body {
+    font-family:ubuntu,sans-serif;
+}
+
+table, th, td {
+    border: 1px solid black;
+     border-collapse: collapse;
+    text-align: center
+}
+
+main {
+    margin-left:30px;
+    margin-top: 30px;
+}
+
+table#t01 thead th:nth-child(1) {
+    background-color: #7fb9c2;
+    color: black;
+}
+
+table#t01 tr:nth-child(even) {
+    background-color: #e7f0ed;
+}
+
+table#t01 tr:nth-child(odd) {
+   background-color:#e7ffed;
+}
+
+table#t01 tfoot tr:first-child {
+    background-color: #7fb9c2;
+    color: black;
+}
+
+table#t01 th {
+    background-color: #628ca6;
+    color: white;
+}
+
+table {
+    width: 40%;      
+}
+
+.wildwest {
+      box-shadow: 10px 10px 10px #7fb9c2;
+}
+
+td, th {
+    height: 30px;
+    vertical-align: center;
+}
+
+#novmo {
+     background-color: #628ca6;
+    color:white;
+}
+
+#blafri {
+  font-style: italic;  
+}
