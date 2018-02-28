@@ -41,6 +41,10 @@ table#t01 th {
     color: white;
 }
 
+table#t01 tbody tr:nth-child(6) td:first-child {
+   font-style: italic;  
+
+}
 table {
     width: 40%;      
 }
@@ -54,11 +58,8 @@ td, th {
     vertical-align: center;
 }
 
-#novmo {
+ table#t01 tbody tr:nth-child(5) td:nth-child(3) {
      background-color: #628ca6;
     color:white;
 }
 
-#blafri {
-  font-style: italic;  
-}
