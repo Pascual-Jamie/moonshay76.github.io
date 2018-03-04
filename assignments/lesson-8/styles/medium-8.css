@@ -5,31 +5,44 @@
     }  
     
     nav ul {
-        display: flex;
         justify-content: space-around;
     }
+    
     nav ul li {
         display: block;
         
     }
+    
     nav ul.hide {
         display: flex;
     }
 
-  
    section.forecast {
         display: flex;
         flex-direction: column;
-        padding: 20px 0 0 0;
+        padding: 15px 0 0 0;
+    }
+    
+    .townpic {
+        display: flex;
+        
     }
     
     .town-article {
-        flex-direction: row-reverse;
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns:1fr 1fr;
+        max-width: 95%;
+        margin: auto;
+    
     }
-    article p.town-article img {
-        align-self: flex-start;
+    
+    article div.town-article img {
         height: 50%;
-        padding: 0 10px  0 0;
+        max-width: 100%;
+        padding: 0 5px 0 0;
+        align-self: center;
+        
     } 
  
     .weatherpho {
@@ -46,15 +59,13 @@
   
     }
 
-    .highlow, .current, .conditions, .windChill, .mainPicture {
+    .highlow, .conditions, .mainPicture {
         display:grid;
         grid-gap: 1rem;
         grid-template-columns:1fr 1fr;
         max-width: 95%;
         margin: auto;
     }
-    
-    
-    
-    
+   
+  
 }

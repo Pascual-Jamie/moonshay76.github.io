@@ -96,7 +96,7 @@ main {
 
 .weapic {
     display: grid;
-    max-width: 100%;
+    max-width: 90%;
 }
 
  h2 {
@@ -107,19 +107,30 @@ h3, h4, h5 {
     font-size: 22px;     
 }
 
-main section div {}
 
-main section picture img{
-    display: flex;
+section.overview {
+    background-color: white;
+    border-radius:.8em;
+    margin:1.5em 0;
+    border: #230044 solid 2px; 
+    box-shadow: 4px 4px 10px #230044;
+}
+
+section.mainPicture {
     justify-content: center;
-    max-width: 280px;
-    margin-right: 10%;
-    margin-left: 10%;
+    max-width: 240px;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+.townpic {
+    display: none;
+    
 }
 
 main figure img { 
     width: 100%;
-    height: 300px;
+    height: 260px;
 }
 
 /*--------------- SECTION ---------------*/
@@ -140,10 +151,10 @@ section.forecast table th, td {
         border: 1px solid #230044;
     }
 
-article p.town-article img { 
+article div.town-article img { 
     display: flex;
-    width: 50%;
-    max-height: 50%; 
+    width: 40%;
+    max-height: 40%; 
     margin-right: auto;
     margin-left: auto;
     padding: 1px 1px 12px 1px;
