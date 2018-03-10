@@ -15,19 +15,18 @@ weatherFranklin.onload = function() {
     
     document.getElementById('highTemp').innerHTML = weatherInfo.current_observation.temp_f;
     
-    document.getElementById('feelTemp').innerHTML = weatherInfo.current_observation.feelslike_f;
-    
-    document.getElementById('currentW').innerHTML = weatherInfo.current_observation.weather;
-    
     document.getElementById('imageIcon').src = weatherInfo.current_observation.icon_url;
         
-    document.getElementById('precip').innerHTML = weatherInfo.current_observation.precept_1hr_in;
+    document.getElementById('precipitate').innerHTML = weatherInfo.current_observation.precipt_1hr_in;
     
     document.getElementById('windSpeed').innerHTML = weatherInfo.current_observation.wind_mph;
     
     document.getElementById('forcast').innerHTML = weatherInfo.current_observation.forecast_url;    
     
-    document.getElementById('windOutput').innerHTML = weatherInfo.current_observation.windchill_f;
+    document.getElementById('windOutput').innerHTML = weatherInfo.current_observation.windchill_string;
     
 } //end of onload
+
+
+// Current Conditions for Franklin
 
