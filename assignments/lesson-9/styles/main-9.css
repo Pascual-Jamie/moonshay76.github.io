@@ -114,6 +114,9 @@ section.overview {
     margin:1.5em 0;
     border: #230044 solid 2px; 
     box-shadow: 4px 4px 10px #230044;
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 section.mainPicture {
@@ -129,7 +132,7 @@ section.mainPicture {
 }
 
 main figure img { 
-    width: 100%;
+    width: 95%;
     height: 260px;
 }
 
@@ -153,11 +156,11 @@ section.forecast table th, td {
 
 article div.town-article img { 
     display: flex;
-    width: 40%;
-    max-height: 40%; 
+    width: 45%;
+    max-height: 70%; 
     margin-right: auto;
     margin-left: auto;
-    padding: 1px 1px 12px 1px;
+    padding: 1px 1px 10px 1px;
 }
 /*----------------FORM-------------------*/
 
