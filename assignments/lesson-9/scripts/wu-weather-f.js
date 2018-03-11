@@ -13,8 +13,6 @@ weatherFranklin.onload = function () {
 
     document.getElementById('place').innerHTML = weatherInfo.current_observation.display_location.city;
 
-    document.getElementById('highTemp').innerHTML = weatherInfo.current_observation.temp_f;
-
     document.getElementById('imageIcon').src = weatherInfo.current_observation.icon_url;
 
     document.getElementById('precipitate').innerHTML = weatherInfo.current_observation.precip_1hr_in;
@@ -47,6 +45,6 @@ currentW.onload = function () {
     console.log(weatherI);
 
     document.getElementById('weatherCurrent').innerHTML = weatherI.forecast.txt_forecast.forecastday["0"].fcttext;
-
-
+    document.getElementById('lowTemp').innerHTML = weatherI.forecast.simpleforecast.forecastday["0"].low.fahrenheit;
+    document.getElementById('highTemp').innerHTML = weatherI.forecast.simpleforecast.forecastday["0"].high.fahrenheit;
 }
