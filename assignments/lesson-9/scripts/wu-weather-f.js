@@ -30,3 +30,15 @@ weatherFranklin.onload = function() {
 
 // Current Conditions for Franklin
 
+var currentW = new XMLHttpRequest();
+
+currentW.open('GET','http://api.wunderground.com/api/1f7ee438ba530e58/forecast/q/MN/Franklin.json', true);
+currentW.send();
+
+currentW.onload = funcion() {
+    var weatherI = JSON.parse(currentW.responseText);
+    console.log(weatherI);
+    
+    document.getElementById('weatherCurrent').innerHTML = weatherI.forecast.txt_forecast.forecastday["0"].fcttext;    
+    
+}
