@@ -17,11 +17,11 @@ weatherFranklin.onload = function() {
     
     document.getElementById('imageIcon').src = weatherInfo.current_observation.icon_url;
         
-    document.getElementById('precipitate').innerHTML = weatherInfo.current_observation.precipt_1hr_in;
+    document.getElementById('precipitate').innerHTML = weatherInfo.current_observation.precip_1hr_in;
     
     document.getElementById('windSpeed').innerHTML = weatherInfo.current_observation.wind_mph;
     
-    document.getElementById('forcast').innerHTML = weatherInfo.current_observation.forecast_url;    
+    document.getElementById('forcast').innerHTML = weatherInfo.current_observation.weather;    
     
     document.getElementById('windOutput').innerHTML = weatherInfo.current_observation.windchill_string;
     
