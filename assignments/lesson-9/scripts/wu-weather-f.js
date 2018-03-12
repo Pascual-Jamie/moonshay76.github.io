@@ -17,8 +17,6 @@ weatherFranklin.onload = function () {
 
     document.getElementById('place').innerHTML = weatherInfo.current_observation.display_location.city;
 
-    
-
     document.getElementById('precipitate').innerHTML = weatherInfo.current_observation.precip_1hr_in;
 
     document.getElementById('windSpeed').innerHTML = weatherInfo.current_observation.wind_mph;
