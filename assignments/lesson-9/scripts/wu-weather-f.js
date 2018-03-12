@@ -2,7 +2,7 @@
 
 var weatherFranklin = new XMLHttpRequest();
 
-weatherFranklin.open('GET', 'http://api.wunderground.com/api/1f7ee438ba530e58/conditions/q/MN/Franklin.json', true);
+weatherFranklin.open('GET', 'https://api.wunderground.com/api/1f7ee438ba530e58/conditions/q/MN/Franklin.json', true);
 
 weatherFranklin.send();
 
@@ -10,10 +10,14 @@ weatherFranklin.onload = function () {
 
     var weatherInfo = JSON.parse(weatherFranklin.responseText);
     console.log(weatherInfo);
+    
+    var str = document.getElementById('imageIcon').src = weatherInfo.current_observation.icon_url;
+    var res = str.replace("http://icons.wxug.com/i/c/k/nt_clear.gif", "https://icons.wxug.com/i/c/k/nt_clear.gif");
+    document.getElementById("imageIcon").src = res;
 
     document.getElementById('place').innerHTML = weatherInfo.current_observation.display_location.city;
 
-    document.getElementById('imageIcon').src = weatherInfo.current_observation.icon_url;
+    
 
     document.getElementById('precipitate').innerHTML = weatherInfo.current_observation.precip_1hr_in;
 
@@ -36,7 +40,7 @@ weatherFranklin.onload = function () {
 
 var currentW = new XMLHttpRequest();
 
-currentW.open('GET', 'http://api.wunderground.com/api/1f7ee438ba530e58/forecast/q/MN/Franklin.json', true);
+currentW.open('GET', 'https://api.wunderground.com/api/1f7ee438ba530e58/forecast/q/MN/Franklin.json', true);
 currentW.send();
 
 currentW.onload = function () {
