@@ -1,21 +1,21 @@
 //Use Underground Weather site to populate the town pages with data
 
-var weatherSpringville = new XMLHttpRequest();
+var weatherSpringfield = new XMLHttpRequest();
 
-weatherSpringville.open('GET', 'http://api.wunderground.com/api/1f7ee438ba530e58/conditions/q/MN/Springfield.json', true);
+weatherSpringfield.open('GET', 'https://api.wunderground.com/api/1f7ee438ba530e58/conditions/q/MN/Springfield.json', true);
 
-weatherSpringville.send();
+weatherSpringfield.send();
 
-weatherSpringville.onload = function () {
+weatherSpringfield.onload = function () {
 
-    var weatherInfo = JSON.parse(weatherSpringville.responseText);
+    var weatherInfo = JSON.parse(weatherSpringfield.responseText);
     console.log(weatherInfo);
+    
+    var str = document.getElementById('imageIcon').src = weatherInfo.current_observation.icon_url;
+    var res = str.replace("http://icons.wxug.com/i/c/k/nt_clear.gif", "https://icons.wxug.com/i/c/k/nt_clear.gif");
+    document.getElementById("imageIcon").src = res;
 
     document.getElementById('place').innerHTML = weatherInfo.current_observation.display_location.city;
-
-    document.getElementById('highTemp').innerHTML = weatherInfo.current_observation.temp_f;
-
-    document.getElementById('imageIcon').src = weatherInfo.current_observation.icon_url;
 
     document.getElementById('precipitate').innerHTML = weatherInfo.current_observation.precip_1hr_in;
 
@@ -38,7 +38,7 @@ weatherSpringville.onload = function () {
 
 var currentW = new XMLHttpRequest();
 
-currentW.open('GET', 'http://api.wunderground.com/api/1f7ee438ba530e58/forecast/q/MN/Springfield.json', true);
+currentW.open('GET', 'https://api.wunderground.com/api/1f7ee438ba530e58/forecast/q/MN/Springfield.json', true);
 currentW.send();
 
 currentW.onload = function () {
@@ -48,5 +48,8 @@ currentW.onload = function () {
 
     document.getElementById('weatherCurrent').innerHTML = weatherI.forecast.txt_forecast.forecastday["0"].fcttext;
 
+    document.getElementById('lowTemp').innerHTML = weatherI.forecast.simpleforecast.forecastday["0"].low.fahrenheit;
+    
+    document.getElementById('highTemp').innerHTML = weatherI.forecast.simpleforecast.forecastday["0"].high.fahrenheit;
 
 }
