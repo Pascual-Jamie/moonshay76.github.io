@@ -1,0 +1,85 @@
+@media only screen and (min-width: 37.5em) {
+    
+    nav button { 
+        display:none; 
+    }  
+    
+    nav ul {
+        justify-content: space-around;
+    }
+    
+    nav ul li {
+        display: block;
+        
+    }
+    
+    nav ul.hide {
+        display: flex;
+    }
+
+   section.forecast {
+        display: flex;
+        flex-direction: column;
+        padding: 15px 0 0 0;
+    }
+    
+   
+    .townpic {
+        display: flex;
+        
+    }
+    
+    .town-article {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns:1fr 1fr;
+        max-width: 75%;
+        margin: auto;
+    
+    }
+    
+    article div.town-article img {
+        height: 50%;
+        max-width: 100%;
+        padding: 0 5px 0 0;
+        align-self: center;
+        
+    } 
+ 
+    .weatherpho {
+        grid-gap: 2rem;
+        grid-template-columns: 1fr 1fr;
+        max-width: 75%;
+        margin: auto;
+        
+    }
+
+    .container h2 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+  
+    }
+
+    .highlow, .conditions, .mainPicture {
+        display:grid;
+        grid-gap: 1rem;
+        max-width: 85%;
+        grid-template-columns:1fr 1fr;
+        margin: auto;
+    }
+    
+  /*---------Home Page-------*/
+    
+   #townInfo {
+        display: grid;
+        grid-gap: 2rem;
+        grid-template-columns:1fr 1fr 1fr;
+        max-width: 80%;
+        margin: auto;
+        font-size: 14px;
+        padding: 20px 0;
+       
+      
+    }
+    
+}
