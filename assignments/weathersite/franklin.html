@@ -98,16 +98,16 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img id="imgd1" src="" alt="Weather Condition image" width="55"></td>
-                        <td><img id="imgd2" src="" alt="Weather Condition image" width="55"></td>
-                        <td><img id="imgd3" src="" alt="Weather Condition image" width="55"></td>
-                        <td><img id="imgd4" src="" alt="Weather Condition image" width="55"></td>
-                        <td><img id="imgd5" src="" alt="Weather Condition image" width="55"></td> 
-                        <td><img id="imgd6" src="" alt="Weather Condition image" width="55"></td>
-                        <td><img id="imgd7" src="" alt="Weather Condition image" width="55"></td>
-                        <td><img id="imgd8" src="" alt="Weather Condition image" width="55"></td>
-                        <td><img id="imgd9" src="" alt="Weather Condition image" width="55"></td>
-                        <td><img id="imgd10" src="" alt="Weather Condition image" width="55"></td> 
+                        <td><img id="imgd1" src="image" alt="Weather Condition image" width="55"></td>
+                        <td><img id="imgd2" src="image" alt="Weather Condition image" width="55"></td>
+                        <td><img id="imgd3" src="image" alt="Weather Condition image" width="55"></td>
+                        <td><img id="imgd4" src="image" alt="Weather Condition image" width="55"></td>
+                        <td><img id="imgd5" src="image" alt="Weather Condition image" width="55"></td> 
+                        <td><img id="imgd6" src="image" alt="Weather Condition image" width="55"></td>
+                        <td><img id="imgd7" src="image" alt="Weather Condition image" width="55"></td>
+                        <td><img id="imgd8" src="image" alt="Weather Condition image" width="55"></td>
+                        <td><img id="imgd9" src="image" alt="Weather Condition image" width="55"></td>
+                        <td><img id="imgd10" src="image" alt="Weather Condition image" width="55"></td> 
                         </tr>
                     
                     
@@ -162,25 +162,7 @@
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/wu-weather-f.js"></script>
-    
+    <script src="scripts/active.js"></script>
 
 </body>
-    <script>
-    var urlString = document.location.href;
-    var urlArray = urlString.split('/');
-    var pageHREF = urlArray[urlArray.length - 1];
-
-    if (pageHREF !== "") {
-        var menu = document.querySelectorAll('ul#myToggle li a');
-        var i;
-        //loop through all the menu items in the navigation
-        for (i = 0; i < menu.length; i++) {
-            var currentURL = (menu[i].getAttribute("href"));
-            menu[i].parentNode.className = ""; //turn off highlighting by default
-            if (currentURL === pageHREF) {
-                menu[i].parentNode.className = "active"; //turn on if a match
-            } // end if
-        } // end of search for a match
-    } // end of if !==
-</script>
 </html>

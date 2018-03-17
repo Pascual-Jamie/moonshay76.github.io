@@ -139,7 +139,6 @@ section.forecast table th, td {
 article div.town-article img { 
     display: flex;
     width: 65%;
-    max-height: auto; 
     margin-right: auto;
     margin-left: auto;
     padding: 1px 1px 5px 1px;
@@ -237,5 +236,5 @@ section div.townStuff {
 }
 
 #townFormation {
-    padding 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
 }

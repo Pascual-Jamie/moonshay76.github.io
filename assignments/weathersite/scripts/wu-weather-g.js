@@ -10,10 +10,6 @@ weatherGreenville.onload = function () {
 
     var weatherInfo = JSON.parse(weatherGreenville.responseText);
     console.log(weatherInfo);
-    
-    var str = document.getElementById('imageIcon').src = weatherInfo.current_observation.icon_url;
-    var res = str.replace("http://icons.wxug.com/i/c/k/nt_clear.gif", "https://icons.wxug.com/i/c/k/nt_clear.gif");
-    document.getElementById("imageIcon").src = res;
 
     document.getElementById('place').innerHTML = weatherInfo.current_observation.display_location.city;
 
@@ -27,7 +23,7 @@ weatherGreenville.onload = function () {
 
     document.getElementById('windOutput').innerHTML = weatherInfo.current_observation.windchill_string;
 
-
+    document.getElementById('imageIcon').src = weatherInfo.current_observation.icon_url.replace("http", "https");
 
 } //end of onload
 
@@ -81,7 +77,7 @@ diezdia.onload = function () {
     
   //Day 2
     
-     var weekday = dayten.forecast.simpleforecast.forecastday['1'].date.weekday_short;
+    var weekday = dayten.forecast.simpleforecast.forecastday['1'].date.weekday_short;
     var date = dayten.forecast.simpleforecast.forecastday['1'].date.day;
     
     document.getElementById('day2').innerHTML = weekday + " " + date;
@@ -92,7 +88,7 @@ diezdia.onload = function () {
    
  //Day 3
     
-     var weekday = dayten.forecast.simpleforecast.forecastday['2'].date.weekday_short;
+    var weekday = dayten.forecast.simpleforecast.forecastday['2'].date.weekday_short;
     var date = dayten.forecast.simpleforecast.forecastday['2'].date.day;
     
     document.getElementById('day3').innerHTML = weekday + " " + date;
@@ -103,7 +99,7 @@ diezdia.onload = function () {
     
 //Day 4
     
-     var weekday = dayten.forecast.simpleforecast.forecastday['3'].date.weekday_short;
+    var weekday = dayten.forecast.simpleforecast.forecastday['3'].date.weekday_short;
     var date = dayten.forecast.simpleforecast.forecastday['3'].date.day;
     
     document.getElementById('day4').innerHTML = weekday + " " + date;
@@ -114,7 +110,7 @@ diezdia.onload = function () {
     
   //Day 5
     
-     var weekday = dayten.forecast.simpleforecast.forecastday['4'].date.weekday_short;
+    var weekday = dayten.forecast.simpleforecast.forecastday['4'].date.weekday_short;
     var date = dayten.forecast.simpleforecast.forecastday['4'].date.day;
     
     document.getElementById('day5').innerHTML = weekday + " " + date;
@@ -125,7 +121,7 @@ diezdia.onload = function () {
     
   //Day 6
     
-     var weekday = dayten.forecast.simpleforecast.forecastday['5'].date.weekday_short;
+    var weekday = dayten.forecast.simpleforecast.forecastday['5'].date.weekday_short;
     var date = dayten.forecast.simpleforecast.forecastday['5'].date.day;
     
     document.getElementById('day6').innerHTML = weekday + " " + date;
@@ -147,7 +143,7 @@ diezdia.onload = function () {
     
     //Day 8
     
-     var weekday = dayten.forecast.simpleforecast.forecastday['7'].date.weekday_short;
+    var weekday = dayten.forecast.simpleforecast.forecastday['7'].date.weekday_short;
     var date = dayten.forecast.simpleforecast.forecastday['7'].date.day;
     
     document.getElementById('day8').innerHTML = weekday + " " + date;
@@ -157,7 +153,7 @@ diezdia.onload = function () {
     
    //Day 9
     
-     var weekday = dayten.forecast.simpleforecast.forecastday['8'].date.weekday_short;
+    var weekday = dayten.forecast.simpleforecast.forecastday['8'].date.weekday_short;
     var date = dayten.forecast.simpleforecast.forecastday['8'].date.day;
     
     document.getElementById('day9').innerHTML = weekday + " " + date;
@@ -167,7 +163,7 @@ diezdia.onload = function () {
    
   //Day 10
     
-     var weekday = dayten.forecast.simpleforecast.forecastday['9'].date.weekday_short;
+    var weekday = dayten.forecast.simpleforecast.forecastday['9'].date.weekday_short;
     var date = dayten.forecast.simpleforecast.forecastday['9'].date.day;
     
     document.getElementById('day10').innerHTML = weekday + " " + date;
