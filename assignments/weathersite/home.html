@@ -30,7 +30,7 @@
     <nav>
         <button class="hamburger" onclick="toggleNavMenu()">&#9776;</button>
         <ul id="myToggle" class="hide">
-            <li class="active"><a href="home.html">Home</a></li>
+            <li><a href="home.html">Home</a></li>
             <li><a href="franklin.html">Franklin</a></li>
             <li><a href="greenville.html">Greenville</a></li>
             <li><a href="springfield.html">Springfield</a></li>
@@ -39,14 +39,12 @@
         </ul>
     </nav>
 
-   
-    
     <main>
 
         <article>
             <h5>What is it About Today's Weather That Will Peak Your Interest?</h5>
             <div class="town-article">
-                <img src="images/cityoffranklin2.jpeg" alt="Sunny morning" width="120" height="160"> 
+                <img src="images/homepgart.jpeg" alt="Sunny morning" width="120" height="160"> 
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet. 
             </p>
             </div>    
@@ -54,9 +52,32 @@
         
     </main>
     
-    <section id="townInfo">
     
+   
+    <section id="townFormation">
+        <div class="townStuff">
+            <section class="townInfo">
+                <div class="franklin">
+                </div>
+            </section>
+        </div>
+        
+        <div class="townStuff">
+            <section class="townInfo">
+                <div class="greenville">
+                </div>
+            </section>
+        </div>
+        
+        <div class="townStuff">
+            <section class="townInfo">
+                <div class="springfield">
+                </div>
+            </section>
+        </div>
     </section> 
+    
+    
     
     <footer>
         <aside>
@@ -68,7 +89,25 @@
 
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
-    <script src="scripts/index.js"></script>
+    <script src="scripts/home.js"></script>
     
 </body>
+    <script>
+    var urlString = document.location.href;
+    var urlArray = urlString.split('/');
+    var pageHREF = urlArray[urlArray.length - 1];
+
+    if (pageHREF !== "") {
+        var menu = document.querySelectorAll('ul#myToggle li a');
+        var i;
+        //loop through all the menu items in the navigation
+        for (i = 0; i < menu.length; i++) {
+            var currentURL = (menu[i].getAttribute("href"));
+            menu[i].parentNode.className = ""; //turn off highlighting by default
+            if (currentURL === pageHREF) {
+                menu[i].parentNode.className = "active"; //turn on if a match
+            } // end if
+        } // end of search for a match
+    } // end of if !==
+</script>
 </html>

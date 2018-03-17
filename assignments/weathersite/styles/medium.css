@@ -1,5 +1,5 @@
 @media only screen and (min-width: 37.5em) {
-    
+  /*-------NAVIGATION-----*/
     nav button { 
         display:none; 
     }  
@@ -16,7 +16,8 @@
     nav ul.hide {
         display: flex;
     }
-
+/*--------SECTION----------*/
+    
    section.forecast {
         display: flex;
         flex-direction: column;
@@ -39,9 +40,9 @@
     }
     
     article div.town-article img {
-        height: 50%;
+        height: 85%;
         max-width: 100%;
-        padding: 0 5px 0 0;
+        padding: 0 2px 0 0;
         align-self: center;
         
     } 
@@ -70,16 +71,13 @@
     
   /*---------Home Page-------*/
     
-   #townInfo {
-        display: grid;
-        grid-gap: 2rem;
-        grid-template-columns:1fr 1fr 1fr;
-        max-width: 80%;
-        margin: auto;
-        font-size: 14px;
-        padding: 20px 0;
-       
-      
+    #townFormation {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 90%;
+        padding: 20px 20px 10px 30px;
+    
     }
     
 }

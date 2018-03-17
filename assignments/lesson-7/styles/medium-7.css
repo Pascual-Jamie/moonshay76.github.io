@@ -1,9 +1,11 @@
 @media only screen and (min-width: 37.5em) {
     
+    
+   /*-----------Navigation-------*/  
     nav button { 
         display:none; 
     }  
-    
+     
     nav ul {
         display: flex;
         justify-content: space-around;
@@ -16,7 +18,8 @@
         display: flex;
     }
 
-  
+ /*----------Section-----------*/ 
+    
    section.forecast {
         display: flex;
         flex-direction: column;

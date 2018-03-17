@@ -107,37 +107,19 @@ h3, h4, h5 {
     font-size: 22px;     
 }
 
-
-section.overview {
-    background-color: white;
-    border-radius:.8em;
-    margin:1.5em 0;
-    border: #230044 solid 2px; 
-    box-shadow: 4px 4px 10px #230044;
-    width: 75%;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-section.mainPicture {
-    justify-content: center;
-    max-width: 240px;
-    margin-right: 20%;
-    margin-left: 20%;
-}
-
 .townpic {
     display: none;
-    
+  }
+main figure { 
+    margin: 0;  
+    width: 100%; 
 }
-
 main figure img { 
-    width: 95%;
-    height: 260px;
+    width: 85%;
+    height: 400px;
 }
 
 /*--------------- SECTION ---------------*/
-section {}
 
 section.forecast { 
     display: none; 
@@ -156,11 +138,29 @@ section.forecast table th, td {
 
 article div.town-article img { 
     display: flex;
-    width: 45%;
-    max-height: 70%; 
+    width: 65%;
+    max-height: auto; 
     margin-right: auto;
     margin-left: auto;
-    padding: 1px 1px 10px 1px;
+    padding: 1px 1px 5px 1px;
+}
+
+section.overview {
+    background-color: white;
+    border-radius:.8em;
+    margin:1.5em 0;
+    border: #230044 solid 2px; 
+    box-shadow: 4px 4px 10px #230044;
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+section.mainPicture {
+    justify-content: center;
+    max-width: 240px;
+    margin-right: 20%;
+    margin-left: 20%;
 }
 /*----------------FORM-------------------*/
 
@@ -224,4 +224,18 @@ footer p {
     font-size: 12px;
 } 
 
+/*------------HOME PAGE-------------*/
 
+section div.townStuff {
+    border: solid 2px #230044;
+    max-width: 380px;
+    margin-right: auto;
+    margin-left:auto;
+    padding: 0 20px 10px 20px;
+    border-radius:.8em;
+    box-shadow: 4px 4px 10px #230044;
+}
+
+#townFormation {
+    padding 10px 10px 10px 10px;
+}
