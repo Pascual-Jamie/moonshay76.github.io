@@ -77,15 +77,15 @@
                     </select>            
                 </label>
 
-                <label><span>Are you in Danger?</span></label>
+                <label id=dangerLevel><span>Are you in Danger?</span>
             
+                    <div>
+                        <input id="radio1" type="radio" name="dangerlevel" value="yes" checked> Yes                      
+                        <input id="radio1" type="radio" name="dangerlevel" value="maybe"> Maybe  
+                        <input id="radio1" type="radio" name="dangerlevel" value="no"> No   
                     
-                        <input type="radio" name="dangerlevel" value="yes" checked> Yes
-                        <input type="radio" name="dangerlevel" value="maybe"> Maybe
-                        <input type="radio" name="dangerlevel" value="no"> No 
-                    
-                  
-
+                    </div>
+                </label>
                 <label><span>Additional Information or Comments</span>
             
                     <textarea rows="4" cols="50" placeholder="Enter your comments here."></textarea>
