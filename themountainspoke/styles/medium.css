@@ -86,18 +86,17 @@
    #mountainbk  {
         display: grid;
         grid-gap: .2rem;
-        padding: .2em;
         margin: 2px;
         grid-template-columns: 1fr 1fr 1fr;
     }
     main section div{
-        margin: 5px;
+        margin: 15px;
     }
     main section div p {
         margin: 15px;
     }
     
-    
+
     /*---------MAIN-SALES---------*/
     
     .salesbikeInfo div {
