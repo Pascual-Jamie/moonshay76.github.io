@@ -96,8 +96,7 @@ nav ul.hide {
     margin-left: 5%;
      border: solid 2px #004E41;
     border-radius: 2em;
-    color: #004E41;
-    background: #004E41; 
+    background-color: #004E41; 
     box-shadow: 8px 8px 15px #004E41;
  }    
     
@@ -152,13 +151,14 @@ h2 {
 
 #advent1, #advent2 {
     border-radius: 1.6em ;
-        border: #004E41 solid 2px; 
+        border: #027562 solid 2px; 
         box-shadow: 8px 8px 15px #027562;
-        padding: 200px, 15px, 10px, 10px;
+        padding: 20px 15px 10px 10px;
         height: auto;
         width: 90%;
         background-color: #004E41;
-        color: #91E3D5;
+        font-style: oblique; 
+        color: #91E3D5;   
         margin-top: 10px;
     
 }
@@ -244,7 +244,7 @@ tbody tr:nth-child(even) {
         border-radius: 1.6em ;
         border: #004E41 solid 2px; 
         box-shadow: 4px 4px 10px #027562;
-        padding: 10px, 10px, 10px, 10px;
+        padding: 10px 10px 10px 10px;
         height: 200px;
         width: 70%;
         background-color: #027562;
@@ -259,7 +259,7 @@ tbody tr:nth-child(even) {
 }
 
 div #contactlink, #eventlink, #repairlink {
-     -webkit-appearance: none; /*remove the apple movile default styling*/
+    
     border: solid 2px #004E41;
     border-radius: 5px;
     color: #004E41;
@@ -277,8 +277,6 @@ section div {
 }
 
 
-        
-}
 /*---------------CONTACT-FORM---------------*/
 
 #reportform{}
@@ -291,7 +289,7 @@ section div {
     border: #004E41 solid 2px;
     box-shadow: 4px 4px 10px #027562; 
     max-width: 60%;
-    padding: 0 20px 20px 2opx;
+    padding: 0 20px 20px 20px;
 }   
 
  #label1, #label2, #label3, #label4 {
@@ -305,13 +303,12 @@ section div {
      
 }
 
-input, textarea, {
+input textarea {
     background-color: whitesmoke;
         
 }
 
 input.submitButton {
-    -webkit-appearance: none; /*remove the apple movile default styling*/
     border: solid 2px #004E41;
     border-radius: 5px;
     color: #004E41;
@@ -351,8 +348,8 @@ label {
 }
 
 input.contactSubmit {
-    -webkit-appearance: none;
-    /*remove the apple movile default styling*/
+   
+   
     border: solid 2px #004E41;
     border-radius: 4em;
     color: #004E41;

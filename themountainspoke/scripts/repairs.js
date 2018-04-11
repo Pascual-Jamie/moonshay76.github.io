@@ -67,5 +67,5 @@ xmlhttp.onreadystatechange = function () {
 };
 
 //xmlhttp.open('GET', "data/repairs.json", true);
-xmlhttp.open("GET", "https://moonshay76.github.io/assignments/themountainspoke/data/repairs.json", true);
+xmlhttp.open("GET", "https://moonshay76.github.io/themountainspoke/data/repairs.json", true);
 xmlhttp.send();
