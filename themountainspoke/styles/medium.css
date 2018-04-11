@@ -103,8 +103,9 @@
     .salesbikeInfo div {
        margin: 20px 30px 20px ;
     }
-  .mySlidesO, .mySlidesT, .mySlidesH {
+   .mySlidesO, .mySlidesT, .mySlidesH {
         max-width: 40%;
+        height: 233px;
     } 
     
     
