@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Mountain Spoke</title>
+    <meta name="author" content="Jamie Pascual">
+    <meta name="description" content="The Mountain Spoke website with current  bicycyle tours, bicycle parts, and bicycle repair shop">
+    <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $(".infoOne").hide(); 
+        });
+        
+        $(document).ready(function() {
+            $(".salesBicycle").click(function() {
+                $(".infoOne").slideToggle("slow");
+            });
+        });
+
+        
+        $(document).ready(function() {
+            $(".infoTwo").hide(); 
+        });
+        
+        $(document).ready(function() {
+            $(".salesBicycle2").click(function() {
+                $(".infoTwo").slideToggle("slow");
+            });
+        });
+        
+        $(document).ready(function() {
+            $(".infoThree").hide(); 
+        });
+        
+        $(document).ready(function() {
+            $(".salesBicycle3").click(function() {
+                $(".infoThree").slideToggle("slow");
+            });
+        });
+    </script>
+
+
+</head>
+
+<body>
+
+    <header>
+        <img src="images/mountainspokelogo.jpg" alt="The site logo">
+        <h1>The Mountain Spoke</h1>
+        <div class="storehours">Mon-Fri: 8:30am-6:00pm<br> Sat:8:30am-5:00pm <br> Sun: Closed</div>
+    </header>
+
+    <nav>
+        <button class="hamburger" onclick="toggleNavMenu()">&#9776;</button>
+        <ul id="myToggle" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="adventure.html">Daily Adventure Tours</a></li>
+            <li><a href="events.html">Upcoming Events</a></li>
+            <li><a href="sales.html">Sales Shop</a></li>
+            <li><a href="repair.html">Repair Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2 id="subSales">Click to See More Information</h2>
+        <section class="salesbikeInfo">
+            <div class="salesBicycle">
+                <h3 id="salesBike1">Instinct Carbon 70</h3>
+                <p><b>MSRP $5,299</b></p>
+                <img class="mySlidesO" src="images/salesbike1.jpg">
+                <img class="mySlidesO" src="images/salesbike1a.jpg">
+                <div class="infoOne">
+                    <p>Stable and aggressive, the Instinct is our most versatile trail bike. With 29" wheels and a wide range of RIDE-9™ adjustments, the all new Instinct is available in both carbon and alloy models. An all-new frame for 2018 pushes the rear travel to 140mm, increasing stiffness and tweaking the suspension kinematics. Despite the increase in travel, the new frame has noticeably more efficient pedaling, with better small-bump sensitivity and a host of next-generation features. The Instinct BC Edition is our all-new Instinct platform, built up as an even more aggressive trail monster. Designed with an optimized single-position link, ultra-aggressive geometry, and a long stroke shock that provides 155mm of rear travel, we’ve kitted out the Instinct BC with wide bars, big tires, ultra-stiff wheels, and more capable suspension. It smashes all mountain lines, rails corners, and plows over everything in sight, while displaying all the climbing efficiency that makes the Instinct a crowd favourite.
+                    </p>
+                </div>
+            </div>
+
+            <div class="salesBicycle2">
+                <h4 id="salesBike2">Thunderbolt Carbon 90 BC Edition</h4>
+                <p><b>MSRP $5,999</b></p>
+                <img class="mySlidesT" src="images/salesbike2.jpg">
+                <img class="mySlidesT" src="images/salesbike2a.jpg">
+                <div class="infoTwo">
+                    <p>Fast as lightning! The Thunderbolt is our vision of a perfect XC trail bike. With the Thunderbolt we’ve designed an all-new carbon frame that pushes the rear travel to 130mm, increases stiffness, lowers the rate curve slightly, and gives the frame a host of next-generation features—but keeps its playful geometry and wide range of RIDE-9™ adjustments. The Thunderbolt is at home on technical climbs, powering through rough stuff, and popping off every trail feature you lay eyes on.With a long stroke shock that provides 140mm of rear travel, we’ve kitted out the Thunderbolt BC Edition with wide bars, big tires, ultra-stiff wheels, and more capable suspension. With a wide range of RIDE-9™ adjustments for whatever terrain you want to tackle, its more aggressive nature is perfect for all-day trail adventures.
+                    </p>
+                </div>
+            </div>
+
+            <div class="salesBicycle3">
+                <h5 id="salesBike3">Reaper 26-Youth</h5>
+                <p><b>MSRP $2,389 </b></p>
+                <img class="mySlidesH" src="images/salesbike3.jpg">
+                <img class="mySlidesH" src="images/salesbike3a.jpg">
+                <div class="infoThree">
+                    <p>The Reaper provides the same aggressive trail performance found in our Thunderbolt and Altitude full suspension bikes in a smaller package for young rippers. Don’t fear the Reaper. The Reaper can tear up singletrack, smash technical descents, and slay bike park laps all day long. And, because we know that kids grow (and have younger siblings), the Reaper is easily convertible from 24” wheels to 26” wheels and vice versa.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+
+
+    </main>
+
+
+    <footer>
+        <aside>
+            The Mountain Spoke | 3950 Valley Commons Drive | Bozeman, MO 59715 | themountainspoke@domain.com | (406)555-5555
+        </aside>
+        <p class="footerbar">&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="currentdate">Current date placeholder</span> | <a href="resources.html">Resources Page</a> | <a href="video.html">Video</a></p>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/active.js"></script>
+
+</body>
+
+    
+</html>

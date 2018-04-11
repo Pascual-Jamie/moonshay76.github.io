@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Mountain Spoke</title>
+    <meta name="author" content="Jamie Pascual">
+    <meta name="description" content="The Mountain Spoke website with current  bicycyle tours, bicycle parts, and bicycle repair shop">
+    <link href="https://fonts.googleapis.com/css?family=Chicle" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <header>
+        <img src="images/mountainspokelogo.jpg" alt="The site logo">
+        <h1>The Mountain Spoke</h1>
+        <div class="storehours">Mon-Fri: 8:30am-6:00pm<br> Sat:8:30am-5:00pm <br> Sun: Closed</div>
+    </header>
+
+    <nav>
+        <button class="hamburger" onclick="toggleNavMenu()">&#9776;</button>
+        <ul id="myToggle" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="adventure.html">Daily Adventure Tours</a></li>
+            <li><a href="events.html">Upcoming Events</a></li>
+            <li><a href="sales.html">Sales Shop</a></li>
+            <li><a href="repair.html">Repair Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2 class="homesubtitle">Your Adventure Starts Here, Come Join Us!</h2>
+        <section id="topsection">
+            <div class="displayslides">
+                <img class="mySlides" src="images/mountainbike3.jpeg">
+                <img class="mySlides" src="images/mountainbike4.jpeg">
+                <img class="mySlides" src="images/mountainbike6.jpg">
+                <img class="mySlides" src="images/mountainbike7.jpg">
+                <img class="mySlides" src="images/backgroundimage.jpg">
+            </div>
+           
+         <div class="homeEvents">
+                <img src="images/upcomingevents.jpg">
+                <p>Come Celebrate the 20th Anniversary of the Great Divide Mountain Bike Event.  Starts 2nd Week in July, and you are bount to run into some anniversery events along the way.  Come Join us on this Exciting Adventure. </p>
+            </div> 
+            
+        </section>
+
+
+        <section id="mountainbk">
+            <div>
+                <img id="img1" src="images/mountainbike.jpeg" alt="Mountain Biking">
+                <p>There are many opportunity for Engoyment in Bozeman Montana. The trails are available for both touring bikes an mountain bikes. The town is bike friendly with bike lanes and routes set out through the residential and commercial areas. Contact us for more infromation of our services.</p>
+                <button id="contactlink"><a href="contact.html">Conctact Us</a></button>
+            </div>
+
+            <div>
+                <img id="img2" src="images/mountainbike2.jpeg" alt="Mountain Biking #2">
+                <p>2018 is the 20th Anniversary of the Great Divide Mountain Bike Ride. You dont want to miss your chance to learn more and come join us on this 7 week run starting the 2nd week of June. The beauty of nature is unbelievable. Come Explore more.</p>
+                <button id="eventlink"><a href="events.html">Events</a></button>
+            </div>
+
+            <div>
+                <img id="img3" src="images/repairmb.jpg" alt="Mountain Biking #3">
+                <p>Come and see what the repair shop has to offer you. We can repair anything when it comes to bicycles, little or big. We got you covered. We will get you up and going in time for the Great Divide event.  Come check us out and make an appointment soon, they fill up fast.</p>
+                <button id="repairlink"><a href="repair.html">Repair</a></button>
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <aside>
+            The Mountain Spoke | 3950 Valley Commons Drive | Bozeman, MO 59715 | themountainspoke@domain.com | (406)555-5555
+        </aside>
+        <p class="footerbar">&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="currentdate">Current date placeholder</span> | <a href="resources.html">Resources Page</a> | <a href="video.html">Video</a></p>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/active.js"></script>
+    <script src="scripts/imageslider.js"></script>
+</body>
+
+    
+</html>

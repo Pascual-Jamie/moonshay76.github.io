@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Mountain Spoke</title>
+    <meta name="author" content="Jamie Pascual">
+    <meta name="description" content="The Mountain Spoke website with current  bicycyle tours, bicycle parts, and bicycle repair shop">
+    <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+    <!--<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>-->
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <img src="images/mountainspokelogo.jpg" alt="The site logo">
+        <h1>The Mountain Spoke</h1>
+        <div class="storehours">Mon-Fri: 8:30am-6:00pm<br> Sat:8:30am-5:00pm <br> Sun: Closed</div>
+    </header>
+
+    <nav>
+        <button class="hamburger" onclick="toggleNavMenu()">&#9776;</button>
+        <ul id="myToggle" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="adventure.html">Daily Adventure Tours</a></li>
+            <li><a href="events.html">Upcoming Events</a></li>
+            <li><a href="sales.html">Sales Shop</a></li>
+            <li><a href="repair.html">Repair Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        
+        <h2>Welcome to the Repair Shop!</h2> 
+        <h3>Check out our affordable prices.  Call (406)555-5555 to make an appointment soon.</h3>
+           
+    <secrion class="repairService">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">Tune-Ups</th>
+
+                </tr>
+                <tr>
+                    <th>Repair Service</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Basic Tune-Up</td>
+                    <td><span id="tuneUpOne"></span></td>
+                </tr>
+  
+                <tr>
+                    <td>Premium Tune-up</td>
+                    <td><span id="tuneUpTwo"></span></td>
+                </tr>
+    
+                <tr>
+                    <td>Brake System Tune-Up</td>
+                    <td><span id="tuneUpThree"></span></td>
+                </tr>
+
+                <tr>
+                    <td>Drivetrain Tune-Up</td>
+                    <td><span id="tuneUpFour"></span></td>
+                </tr>
+                   
+                <tr>
+                    <td>Bike Build</td>
+                    <td><span id="tuneUpFive"></span></td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">Drivetrain</th>
+
+                </tr>
+                <tr>
+                    <th>Repair Service</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Install or Overhaul Bottom Bracket</td>
+                    <td><span id="drivetrainOne"></span></td>
+                </tr>
+
+                <tr>
+                    <td>Install Chain</td>
+                    <td><span id="drivetrainTwo"></span></td>
+                </tr>
+
+                <tr>
+                    <td>Remove/Clean/Reinstall Chain</td>
+                    <td><span id="drivetrainThree"></span></td>
+                </tr>
+
+                <tr>
+                    <td>Install Pedals</td>
+                    <td><span id="drivetrainFour"></span></td>
+                </tr>
+
+                <tr>
+                    <td>Install Crank (1 Piece)</td>
+                    <td><span id="drivetrainFive"></span></td>
+                </tr>
+
+                <tr>
+                    <td>Install Crank (3 Piece)</td>
+                    <td><span id="drivetrainSix"></span></td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">Shifter/Derailleur</th>
+
+                </tr>
+                <tr>
+                    <th>Repair Service</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Adjust Derailleur (Front or Rear)</td>
+                    <td><span id="shifterOne"></span></td>
+                </tr>
+
+                <tr>
+                    <td>Install Front Derailleur</td>
+                    <td><span id="shifterTwo"></span></td>
+                </tr>
+
+                <tr>
+                    <td>Install Rear Derailleur</td>
+                    <td><span id="shifterThree"></span></td>
+                </tr>
+
+                <tr>
+                    <td>Install Shifter (Each)</td>
+                    <td><span id="shifterFour"></span></td>
+                </tr>
+
+                <tr>
+                    <td>Install Shifter Cables/Housing</td>
+                    <td><span id="shifterFive"></span></td>
+                </tr>
+
+            </tbody>
+        </table>
+
+
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">Wheels</th>
+
+                </tr>
+                <tr>
+                    <th>Repair Service</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Install Inner Tube</td>
+                    <td><span id="wheelsOne"></span></td>
+                </tr>
+
+                <tr>
+                    <td>Repair Inner Tube</td>
+                    <td><span id="wheelsTwo"></span></td>
+                </tr>
+
+                <tr>
+                    <td>True Wheel</td>
+                    <td><span id="wheelsThree"></span></td>
+                </tr>
+
+                <tr>
+                    <td>Install Spoke (Each)</td>
+                    <td><span id="wheelsFour"></span></td>
+                </tr>
+
+                <tr>
+                    <td>Adjust Hub (Front or Rear)</td>
+                    <td><span id="wheelsFive"></span></td>
+                </tr>
+
+                <tr>
+                    <td>Overhaul Front Hub</td>
+                    <td><span id="wheelsSix"></span></td>
+                </tr>
+
+                <tr>
+                    <td>Overhaul Rear Hub</td>
+                    <td><span id="wheelsSeven"></span></td>
+                </tr>
+
+                <tr>
+                    <td>Wheel Slime (Per Wheel)</td>
+                    <td><span id="wheelsEight"></span></td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">Handlebars/Fork/Headset</th>
+
+                </tr>
+                <tr>
+                    <th>Repair Service</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Install Handlebars</td>
+                    <td><span id="handleBarsOne"></span></td>
+                </tr>
+
+                <tr>
+                    <td>Install Bar Ends</td>
+                    <td><span id="handleBarsTwo"></span></td>
+                </tr>
+
+                <tr>
+                    <td>Install Handlebar Grips</td>
+                    <td><span id="handleBarsThree"></span></td>
+                </tr>
+
+                <tr>
+                    <td>Install Handlebar Tape</td>
+                    <td><span id="handleBarsFour"></span></td>
+                </tr>
+
+                <tr>
+                    <td>Install Fork</td>
+                    <td><span id="handleBarsFive"></span></td>
+                </tr>
+
+                <tr>
+                    <td>Headset Adjustments</td>
+                    <td><span id="handleBarsSix"></span></td>
+                </tr>
+
+                <tr>
+                    <td>Overhaul Rear Hub</td>
+                   <td><span id="handleBarsSeven"></span></td>
+                </tr>
+
+                <tr>
+                    <td>Install or Overhaul Headset</td>
+                   <td><span id="handleBarsEight"></span></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">Installs</th>
+
+                </tr>
+                <tr>
+                    <th>Repair Service</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Child Carrier</td>
+                    <td><span id="installsOne"></span></td>
+                </tr>
+
+                <tr>
+                    <td>Cycle Computer</td>
+                    <td><span id="installsTwo"></span></td>
+                </tr>
+
+                <tr>
+                    <td>Fenders</td>
+                    <td><span id="installsThree"></span></td>
+                </tr>
+
+                <tr>
+                    <td>Kickstand</td>
+                    <td><span id="installsFour"></span></td>
+                </tr>
+
+                <tr>
+                    <td>Rear Rack</td>
+                    <td><span id="installsFive"></span></td>
+                </tr>
+
+                <tr>
+                    <td>Saddle</td>
+                    <td><span id="installsSix"></span></td>
+                </tr>
+
+                <tr>
+                    <td>Training Wheels</td>
+                    <td><span id="installsSeven"></span></td>
+                </tr>
+
+                <tr>
+                    <td>Water Bottle Cage</td>
+                    <td><span id="installsEight"></span></td>
+                </tr>
+            </tbody>
+        </table>
+</secrion>
+    </main>
+
+    <section>
+
+
+
+    </section>
+
+    <footer>
+        <aside>
+            The Mountain Spoke | 3950 Valley Commons Drive | Bozeman, MO 59715 | themountainspoke@domain.com | (406)555-5555
+        </aside>
+        <p class="footerbar">&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="currentdate">Current date placeholder</span> | <a href="resources.html">Resources Page</a> | <a href="video.html">Video</a></p>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/active.js"></script>
+    <script src="scripts/repairs.js"></script>
+</body>
+
+    
+</html>

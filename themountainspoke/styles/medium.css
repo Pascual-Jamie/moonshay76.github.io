@@ -1,0 +1,149 @@
+@media only screen and (min-width: 37.5em) {
+
+    /*--------HEADER--------*/
+    header {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+
+    }
+
+    header.storehours {
+        display: flex;
+        font-size: 16px;
+        text-align: center;
+    }
+
+
+    /*--------MAIN-ADVENTURE----------*/
+    .adventureTours {
+        display: grid;
+        grid-gap: .5rem;
+        padding: .1em;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /*-------MAIN-EVENTS----*/
+    .greatdivide {
+        display: grid;
+        grid-gap: 2rem;
+        padding: .8em;
+        margin: 10px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .greatdivide img {
+        width: 380px;
+        height: 260px;
+
+    }
+
+    .greatdivide iframe {
+        margin-top: 20px
+    }
+
+    .greatdivide h2 {
+        display: flex;
+        align-items: center;
+        font-size: 40px;
+
+    }
+
+    main #mainEvents {
+        display: grid;
+        grid-gap: 2rem;
+        margin: 10px;
+        padding: .9em;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    main #divideimg img {
+        padding: 80px 10px 10px 10px;
+
+    }
+    main #eventInfo {
+        padding: 10px 10px 10px 10px;
+    }
+
+    /*---------MAIN-CONTACT------*/
+    main #contactus {
+        display: grid;
+        grid-gap: 2rem;
+        padding: .2em;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    /*---------MAIN-INDEX-----*/
+    
+    main #topsection {
+        display: grid;
+        grid-gap: 2rem;
+        padding: 15px 10px 15px 10px;
+        grid-template-columns: 1fr 1fr;
+    }
+   
+    
+   #mountainbk  {
+        display: grid;
+        grid-gap: .2rem;
+        padding: .2em;
+        margin: 2px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    main section div{
+        margin: 5px;
+    }
+    main section div p {
+        margin: 15px;
+    }
+    
+    
+    /*---------MAIN-SALES---------*/
+    
+    .salesbikeInfo div {
+       margin: 20px 30px 20px ;
+    }
+  .mySlidesO, .mySlidesT, .mySlidesH {
+        max-width: 40%;
+    } 
+    
+    
+    /*----------MAIN-REPAIR-------*/
+    
+    .repairService  {
+    display:grid;
+    grid-gap: 2rem;
+    padding: .2em;
+    border-radius:.4em;
+    grid-template-columns:1fr 1fr 1fr;
+}
+    
+    /*-------NAVIGATION-----*/
+    nav button {
+        display: none;
+    }
+
+    nav ul {
+        justify-content: space-around;
+    }
+
+    nav ul li {
+        display: block;
+
+    }
+
+    nav ul.hide {
+        display: flex;
+    }
+
+   
+    
+   
+       
+    
+
+
+   
+  
+
+}

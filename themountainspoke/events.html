@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Mountain Spoke</title>
+    <meta name="author" content="Jamie Pascual">
+    <meta name="description" content="The Mountain Spoke website with current  bicycyle tours, bicycle parts, and bicycle repair shop">
+    <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <header>
+        <img src="images/mountainspokelogo.jpg" alt="The site logo">
+        <h1>The Mountain Spoke</h1>
+        <div class="storehours">Mon-Fri: 8:30am-6:00pm<br> Sat:8:30am-5:00pm <br> Sun: Closed</div>
+    </header>
+
+    <nav>
+        <button class="hamburger" onclick="toggleNavMenu()">&#9776;</button>
+        <ul id="myToggle" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="adventure.html">Daily Adventure Tours</a></li>
+            <li><a href="events.html">Upcoming Events</a></li>
+            <li><a href="sales.html">Sales Shop</a></li>
+            <li><a href="repair.html">Repair Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+
+        <div class="greatdivide">
+            <img src="images/greatdivide.jpg" alt="The Great Divide route">
+            <h2>The Great Divide Mountain Bike Route Information!</h2>
+            <iframe width="380" height="260" src="https://www.youtube.com/embed/1z5i9KbvIxc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+
+        <section id="mainEvents">
+            <div id="register">
+                <h3>Registration Page</h3>
+
+
+                <form action="thankyou.html" method="get" enctype="multipart/form-data" name="contactus" id="registration">
+                    <fieldset class="fieldregis">
+                        <legend><span>Personal Information</span></legend>
+                        <label><span>Full Name:</span><input name="fullname" type="text" value="" placeholder="Full Name" required></label><br>
+                        <label><span>Birthdate: </span><input date="birthdate" type="date"></label><br>
+                        <label><span>Email: </span><input name="email" type="email" value="" placeholder="mtn@domain.com" required></label><br>
+                        <label><span>Phone Number:</span><input name="phone" type="tel" value="" placeholder="ex. 1235551234" pattern="[0-9]{10,20}" required ></label><br>
+                        <label><span>State or Country: </span><input name="state" type="text" value="" placeholder="State or Country" required></label> <br>
+                       
+                        <label><span>Special Accomidations or Comments</span>
+                    <textarea rows="2" cols="25" placeholder="Enter your comments here."></textarea>
+             </label>
+
+                    </fieldset>
+                    <input type="submit" value="Submit" class="contactSubmit">
+                    <input type="hidden" value="Contact Us" name="subject">
+                    <input name="redirect" type="hidden" value="thankyou.html">
+
+                </form>
+
+            </div>
+            
+            
+            <div id="eventInfo">
+                <h4>Event Information</h4>
+                <p>This year 2018, come celebrate the 20th Anniversary with us.  The Great Divide Mountain Bike Route (GDMBR) is Adventure Cycling's premier off-pavement cycling route, crisscrossing the Continental Divide north to south. This route is defined by the word "remote." Its remoteness equates with spectacular terrain and scenery. The entire route is basically dirt-road and mountain-pass riding every day. The diverse nature of the regions makes for an incredible visual, sometimes spiritual experience. The route offers something different every day — whether it be riding conditions, scenery, points of interest, or folks along the way. It is a route to be enjoyed for its diversity.The route is geographically divided into five regions. Beginning at the Canadian border to northern New Mexico.Great Divide Mountain Bike Route Banff, AB to Antelope Wells, NM (2768.4 mi.)</p>
+
+            </div>
+            <div id="divideimg">
+                <img src="images/dividegreatbikes.jpg" alt="The Great Divide Example">
+                
+                <ul>
+                    <li><b>Dates:</b> Second week in July 2018</li>
+                    <li><b>Route:</b> Canadian Border to Northrern New Mexico</li>
+                    <li><b>Costs:</b> $2000 which includes Accommodations, food maitenance and other necessities</li>
+                    <li><b>Basic Requirements:</b> Bike, Gear and other Neccessities</li>
+                </ul>
+            </div>
+        </section>    
+    </main>
+
+    <section>
+
+
+
+    </section>
+
+    <footer>
+        <aside>
+            The Mountain Spoke | 3950 Valley Commons Drive | Bozeman, MO 59715 | themountainspoke@domain.com | (406)555-5555
+        </aside>
+        <p class="footerbar">&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="currentdate">Current date placeholder</span> | <a href="resources.html">Resources Page</a> | <a href="video.html">Video</a></p>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/active.js"></script>
+</body>
+
+
+</html>
