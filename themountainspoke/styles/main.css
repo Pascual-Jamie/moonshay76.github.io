@@ -122,6 +122,7 @@ section div {
    
 }
 
+
 /*-----------MAIN-ADVENTURES---------*/
 .adventureTours {
     margin-left: 20px;
@@ -279,7 +280,9 @@ section div {
     border-radius: 4em 4em ;
 }
 
-
+.mySlides {
+    width: 80%;
+}
 /*---------------CONTACT-FORM---------------*/
 
 #reportform{}
@@ -397,3 +400,14 @@ footer aside {
 footer p {
     font-size: 12px;
 } 
+
+
+/*----------VIDEO.HTML------*/
+
+main iframe {
+    width: 60%; 
+    height: 315px;
+    border-radius: .4em;
+    background-color: #22BCA2;
+    border: #004E41 solid 10px;
+}
