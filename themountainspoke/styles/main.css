@@ -404,9 +404,9 @@ footer p {
 
 /*----------VIDEO.HTML------*/
 
-main iframe {
-    width: 60%; 
-    height: 400px;
+#homeVideo {
+    width: 50%; 
+    height: 360px;
     border-radius: .4em;
     background-color: #22BCA2;
     border: #004E41 solid 10px;
